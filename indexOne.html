@@ -1,0 +1,126 @@
+<!--Автор файла - Гречишников Олег - mail:"golegni@yandtx.ru"--> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grechishnikov</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styleOne.css">
+</head>
+<body>
+    <header class="header"><a id="top"></a>
+        <nav class="header_nav">
+            <div class="hiddNav" id="hiddNav">
+                <ul class="nav_ul" id="navUl">
+                    <li class="ul_item"><a href="#personal">Личная информация</a></li>
+                    <li class="ul_item"><a href="#exp">Опыт</a></li>
+                    <li class="ul_item"><a href="#js">JavaScript</a></li>
+                    <li class="ul_item"><a href="#about">О себе</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sandwich" id="sandwich">
+            <div class="b1"></div>
+            <div class="b1"></div>
+            <div class="b1"></div>
+        </div>
+    </header>
+    <div class="line"></div>
+    <div class="showMenu" id="showMenu">
+        <ul class="nav_ulm" id="navUlm">
+            <li class="ul_item"><a href="#top">Личная информация</a></li>
+            <li class="ul_item"><a href="#exp">Опыт</a></li>
+            <li class="ul_item"><a href="#js">JavaScript</a></li>
+            <li class="ul_item"><a href="#about">О себе</a></li>
+        </ul>
+    </div>
+    <main class="main">
+        <h1 class="title">Анкета</h1>
+        <a id="personal"></a>
+        <div class="iconA"></div>
+        <form class="personal" name="persl" id="pesl" action="" method="">
+            <h2 class="text_h2">Личная информация</h2>
+            <input type="name" name="fio" id="fio" class="form_inp name" placeholder="ФИО" required><br>
+            <label class="date_gruop" id="dateGruop">
+                <input type="text" name="falsdatWB" id="falsdatWB" class="form_inp date false" placeholder="Год рождения" required>
+                <input type="date" name="datWB" id="datWB" class="form_inp date" placeholder="02.01.1990" required hidden>
+            </label><br>    
+            <input type="text" name="place" id="place" class="form_inp place" placeholder="Место проживания" required><br>
+            <input type="text" name="skype" id="skype" class="form_inp skype" placeholder="Skype" required><br>
+            <input type="email" name="mail" id="mail" class="form_inp email" placeholder="E-mail" required><br>
+            <a id="exp"></a>
+            <div class="Shape"></div>
+            <h2 class="text_h2">Расскажите о своем опыте</h2>
+            <div class="tell_exp">
+                <div class="BEM check">
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="bem" value="b1" checked>
+                            <span class="checkbox_text">БЭМ/OOCSS</span> 
+                    </label><br>
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="stl" value="b2" checked>
+                            <span class="checkbox_text">Stylus/LESS/SASS</span> 
+                    </label><br>
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="php" value="b3" checked>
+                            <span class="checkbox_text">Знаком с PHP</span> 
+                    </label><br>        
+                </div>
+                <div class="semant check">
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="sem" value="s1" checked>
+                            <span class="checkbox_text">Верстаю семантично</span> 
+                    </label><br>
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="smc" value="s2" checked>
+                            <span class="checkbox_text">Знаю SMC ModX</span> 
+                    </label><br>
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="gulp" value="s3" checked>
+                            <span class="checkbox_text">Gulp/GUNT</span> 
+                    </label><br>  
+                </div>
+                <div class="webpack check">
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="wp" value="w1" checked>
+                            <span class="checkbox_text">Webpack</span> 
+                    </label><br>
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="jq" value="w2" checked>
+                            <span class="checkbox_text">jQuery</span> 
+                    </label><br>
+                    <label class="checkbox_grup">
+                        <input type="checkbox" class="checkbox" name="git" value="w3" checked>
+                            <span class="checkbox_text">Использую Git</span> 
+                    </label><br>
+                </div>
+            </div>
+            <a id="js"></a>
+            <div class="iconJs"></div>
+            <h2 class="text_h2">Уровень владения JavaScript</h2>
+            <div class="range">
+                <ul class="renge_ul">
+                    <li class="renge_item not">Не владею</li>
+                    <li class="renge_item us">Использую готовые решения</li>
+                    <li class="renge_item remak">Использую готовые решения и умею их переделывать</li>
+                    <li class="renge_item total">Пишу сложный JS с нуля</li>
+                </ul>
+                <div class="range_line">
+                    <input type="range" class="renge_input" name="renge1" id="renge21" min="0" max="100">
+                    <div class="shadou"></div>
+                </div>
+            </div>
+            <a id="about"></a>
+            <div class="iconOp"></div>
+            <h2 class="text_h2">Расскажите о себе</h2>
+            <p class="text_p">Напишите несколько предлжений, чем привлекла Вас наша вакансия и что Вы ожидаете от работы 
+                у нас</p>
+            <p class="textarea"><textarea name="about" placeholder="Понравилась тем, что ..."></textarea></p>
+            <button type="submit" class="button">Готово</button>
+        </form>
+        <div class="button_top" id="buttTop" hidden><a href="#top" class="but_top"></a></div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>

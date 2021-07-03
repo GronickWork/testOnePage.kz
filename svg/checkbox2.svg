@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+	<title>checkbox1</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #435993 } 
+	</style>
+	<path id="Rounded Rectangle 3 copy 2" class="shp0" d="M4 0.99L18 0.99C19.65 0.99 21 2.34 21 4L21 18.01C21 19.67 19.65 21.01 18 21.01L4 21.01C2.35 21.01 1.01 19.67 1.01 18.01L1.01 4C1.01 2.34 2.35 0.99 4 0.99Z" />
+</svg>
